@@ -63,7 +63,7 @@ Deployment/
 
    ```sh
    git clone <repository_url>
-   cd Deployment
+   cd <repo location>
    ```
 
 2. Install dependencies using Poetry:
@@ -95,7 +95,3 @@ Configuration settings are located in the `src/config` directory. Adjust the set
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request for any improvements or bug fixes.
-
-## License
-
-This project is licensed under the MIT License.
