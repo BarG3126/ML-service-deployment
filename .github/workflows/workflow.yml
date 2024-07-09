@@ -27,8 +27,11 @@ jobs:
               run: |
                 curl -sSL https://install.python-poetry.org | python3 -
 
-                        -  name: Install dependencies using poetry
-                          run: poetry run make install
+            - name: Add Poetry to PATH
+              run: echo "$HOME/.local/bin" >> $GITHUB_PATH
 
-                        -  name: Lint with flake8
-                          run: poetry run make check
+            -  name: Install dependencies using poetry
+               run: poetry run make install
+
+            -  name: Lint with flake8
+               run: poetry run make check
