@@ -18,3 +18,9 @@ wemake-python-styleguide = "^0.19.2"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.flake8]
+ignore = [
+    "WPS430",  # Ignore found nested function
+    "WPS503",  # Ignore useless returning `else` statement
+]
